@@ -1,8 +1,36 @@
 {
   "name": "be-fruitful",
   "version": "0.0.0",
-  "description": "",
+  "keywords": [
+    "web-components",
+    "web-component",
+    "custom-element",
+    "custom-elements"
+  ],
+  "description": "Provide optional default light children.",
   "main": "index.js",
+  "exports": {
+    ".": "./be-active.js",
+    "./be-active.js": "./be-active.js"
+  },
+  "files": [
+    "*.*"
+  ],
+  "types": "types.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package-check": "package-check",
+    "serve": "node node_modules/xtal-test/serve.js"
+  },
+  "dependencies": {
+    "be-decorated": "0.0.56",
+    "be-hive": "0.0.15"
+  },
+  "devDependencies": {
+    "xtal-test": "0.0.54",
+    "@skypack/package-check": "0.2.2",
+    "@custom-elements-manifest/analyzer": "0.5.7"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
