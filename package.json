@@ -8,20 +8,16 @@
     "custom-elements"
   ],
   "description": "Provide optional default light children.",
-  "main": "index.js",
+  "main": "be-fruitful.js",
+  "module": "be-fruitful.js",
   "exports": {
-    ".": "./be-active.js",
-    "./be-active.js": "./be-active.js"
+    ".": "./be-fruitful.js",
+    "./be-fruitful.js": "./be-fruitful.js"
   },
   "files": [
     "*.*"
   ],
   "types": "types.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "package-check": "package-check",
-    "serve": "node node_modules/xtal-test/serve.js"
-  },
   "dependencies": {
     "be-decorated": "0.0.56",
     "be-hive": "0.0.15"
@@ -32,7 +28,9 @@
     "@custom-elements-manifest/analyzer": "0.5.7"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package-check": "package-check",
+    "serve": "node node_modules/xtal-test/serve.js"
   },
   "repository": {
     "type": "git",
