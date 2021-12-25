@@ -3,7 +3,7 @@ import {BeFruitfulVirtualProps, BeFruitfulActions, BeFruitfulProps} from './type
 import {register} from 'be-hive/register.js';
 
 export class BeFruitfulController implements BeFruitfulActions{
-    onWaitTime({proxy, waitTime}: this): Promise<void>{
+    onWaitTime({proxy, waitTime}: this): void{
         setTimeout(async () => {
             const rn = proxy.getRootNode() as DocumentFragment;
             const host = (<any>rn).host as HTMLElement;
