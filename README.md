@@ -3,24 +3,17 @@
 Attribute-based equivalent of slot-kin.
 
 ```html
-<my-outer-web-component>
-    <slot name=slot1></slot>
+<my-outer-web-component be-fruitful>
+    
     #shadowroot
-    <my-inner-web-component>
-        <slot name=slot1>
-        <slot name=slot2>
-        #shadowroot
-        <template be-fruitful='{
-            "waitTime": 50,
-            "beVigilant": true,
-        }'>
-            <div slot=slot1>I am slot 1</div>
-            <button slot=slot2>I am  slot 2</div>
-        <template>
-    <my-inner-web-component>
+    ...
+        <template be-born><template>
 <my-outer-web-component>
 
 ```
 
-How to work with flattening slots?
+be-fruitful searches inside the shadowroot for all template elements with the attribute be-born, and instantiates them as "light" elements.
+
+
+
 
